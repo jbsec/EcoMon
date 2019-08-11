@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- Declaration for HTML5 -->
+<html lang="en"> <!-- HTML lang attribute declare the language and start of a Web page -->
+<title>EcoMon™</title> <!-- Tab attributes | Text -->
+<link rel="icon" type="image/png" href="images/menu_icon.png"/> <!-- Tab attributes | Image -->
+<meta charset="UTF-8"> <!-- specifies which character set a website is written with -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Page dimensions and scaling code -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- External Stylesheets | From website templates -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css"> <!-- External Stylesheets | From local file -->
+
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 50%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<body> <!-- Start body -->
+
+<header class="w3-container w3-red w3-center" style="padding:88px 16px"> <!-- Start header -->
+<h1 class="w3-margin w3-jumbo">EcoMon™</h1> <!-- [h1] title styles -->
+<p class="w3-xlarge">Sign in to get started.</p>
+	<a href="php/login.php">
+		<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Login</button>
+	</a>
+
+</header> <!-- End header -->
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container"> <!-- Container code-->
+  <div class="w3-content">
+    <div class="w3-twothird">
+	
+      <h1>What is EcoMon™?</h1>
+      <h5 class="w3-padding-32">EcoMon™ is a open system for collecting, gathering and 
+	  analysing information on emissons at Truro College. Version 1.0 (Current Version)
+	  focuses on displaying information however analytical tools are planned for future
+	  development.
+	  
+	  </h5>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"> <!-- Container code-->
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>How do I get involved?</h1>
+      <h5 class="w3-padding-32">By registering with us, you can volunteer to collect information
+	  about how classrooms use electricity to contribute in an effort to reduce greenhouse
+	  emissons.</h5>
+    </div>
+  </div>
+</div>
+	<center><h2>Further information:</h2></center>
+		<center><button class="collapsible">How to created an account with us:</button></cente>
+			<div class="content">
+		<p>To create your free account, click the login button, enter your email address and password.</p>
+		<p>ADD_TXT2</p>
+	</div>
+		<button class="collapsible">User Authentication Issues</button>
+			<div class="content">
+				<p>There can be many reasons why a user can't log on, eg: problems with the username, password,
+				user account settings or security settings. Some of the main causes of logon problems are as follows:</p>
+			<ul>
+			  <li><b>Incorrect username:</b> check that the username is correct by using Active Directory Users And Computers to verify that the name is spelled correctly.</li>
+			<br>
+			  <li><b>Incorrect password:</b> check that the password was entered in the proper case (and that the Caps Lock key isn't on), the password hasn't expired and the account 
+			  has not been locked out. If all else fails, you can assign a new password through Active Directory Users And Computers.</li>
+			<br>
+			  <li><b>Prohibitive user rights:</b> does the user have permission to log on locally at the computer? Note that regular users do not have normally have permission to log on locally
+			  at the domain controller, as it is assumed that they will log on to the domain from network workstations.</li>
+			<br>
+			  <li><b>Disabled or deleted account:</b> check whether an account has been disabled or deleted by examining the account properties via Active Directory Users And Computers.</li>
+		    <br>
+			  <li><b>Unavailable domain controller, DNS Server or Global Catalog:</b> 	 is the domain controller available to authenticate the user's request? If the domain controller is down, 
+			  the user will not be able to log on until it comes back up. A DNS server and the Global Catalog (if the Active Directory has multiple domains) are also required.</li>
+			</ul>  
+			</div>
+		<button class="collapsible">Change title</button>
+			<div class="content">
+				<p>ADD_TXT</p>
+			</div>
+		<button class="collapsible">Read more about us:</button>
+			<div class="content">
+				<p>ADD_TXT</p>
+			</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity"> <!-- Start footer -->
+	<p>Website provided by the Dream-Team |Ver.1.0.0| University of Plymouth 2019</p> <!-- Footer contents -->
+</footer> <!-- End footer -->
+
+<script src="myScript1.js"></script> <!-- JavaScript code | From local file -->
+
+</body> <!-- End body -->
+</html> <!-- End of file doc -->
